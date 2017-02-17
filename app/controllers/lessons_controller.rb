@@ -1,6 +1,6 @@
 class LessonsController < ApplicationController
-  before_action :logged_in_user
-  before_action :find_lesson, only: [:show]
+  before_action :logged_in_user, only: :update
+  before_action :find_lesson, only: [:show, :update]
 
   def show
   end
